@@ -1,0 +1,23 @@
+<div class="calculator">
+    <input type="text" [value]="currentNum" disabled>
+    <div class="keys">
+        <button type="button" (click)="getOperations('+')" value='+'>+</button>
+        <button type="button"  (click)="getOperations('-')" value="-">-</button>
+        <button type="button"  (click)="getOperations('*')" value="*">*</button>
+        <button type="button" (click)="getOperations('/')" value="/">/</button>
+        <button type="button" (click)="getNum('7')" value="7">7</button>
+        <button type="button" (click)="getNum('8')" value="8">8</button>
+        <button type="button" (click)="getNum('9')" value="9">9</button>
+        <button type="button" (click)="getNum('4')" value="4">4</button>
+        <button type="button" (click)="getNum('5')" value="5">5</button>
+        <button type="button" (click)="getNum('6')" value="6">6</button>
+        <button type="button" (click)="getNum('1')" value="1">1</button>
+        <button type="button" (click)="getNum('2')" value="2">2</button>
+        <button type="button" (click)="getNum('3')" value="3">3</button>
+        <button type="button" (click)="getNum('0')" value="0">0</button>
+        <button type="button" (click)="getOperations('=')" value="=">=</button>
+        <button type='button' (click)="clear()">Clear</button> 
+
+
+     </div>
+</div>
