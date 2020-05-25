@@ -1,3 +1,8 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+
 .calculator{
     border: 1px solid black;
     border-radius: 3px;

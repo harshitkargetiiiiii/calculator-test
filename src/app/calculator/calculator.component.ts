@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CalculatorComponent implements OnInit {
 
-  currentNum = 0;
+  currentNum = '0';
   firstOp = null;
   operator = null;
   waitForSecnum = false;
@@ -25,7 +25,7 @@ export class CalculatorComponent implements OnInit {
       this.currentNum = n;
       this.waitForSecnum = false;
     }else{
-      this.currentNum == 0 ? this.currentNum = n : this.currentNum += n;
+      this.currentNum == '0' ? this.currentNum = n : this.currentNum += n;
     }
   }
 
@@ -65,9 +65,15 @@ export class CalculatorComponent implements OnInit {
   }
 
   clear(){
-    this.currentNum = 0;
+    this.currentNum = '0';
     this.firstOp = null;
     this.operator = null;
     this.waitForSecnum = false;
+  }
+
+  getDecimal(){
+    if(!this.currentNum.includes('.')){
+        this.currentNum += '.'; 
+    }
   }
 }
