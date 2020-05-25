@@ -1,10 +1,10 @@
 <div class="calculator">
-    <input type="text" [value]="currentNum" disabled>
+    <input type="text" class="screen" [value]="currentNum" disabled>
     <div class="keys">
-        <button type="button" (click)="getOperations('+')" value='+'>+</button>
-        <button type="button"  (click)="getOperations('-')" value="-">-</button>
-        <button type="button"  (click)="getOperations('*')" value="*">*</button>
-        <button type="button" (click)="getOperations('/')" value="/">/</button>
+        <button type="button" class="operator" (click)="getOperations('+')" value='+'>+</button>
+        <button type="button" class="operator"  (click)="getOperations('-')" value="-">-</button>
+        <button type="button" class="operator" (click)="getOperations('*')" value="*">*</button>
+        <button type="button" class="operator" (click)="getOperations('/')" value="/">/</button>
         <button type="button" (click)="getNum('7')" value="7">7</button>
         <button type="button" (click)="getNum('8')" value="8">8</button>
         <button type="button" (click)="getNum('9')" value="9">9</button>
@@ -15,8 +15,8 @@
         <button type="button" (click)="getNum('2')" value="2">2</button>
         <button type="button" (click)="getNum('3')" value="3">3</button>
         <button type="button" (click)="getNum('0')" value="0">0</button>
-        <button type="button" (click)="getOperations('=')" value="=">=</button>
-        <button type='button' (click)="clear()">Clear</button> 
+        <button type="button" class="equal-sign" (click)="getOperations('=')" value="=">=</button>
+        <button type='button' class="all-clear" (click)="clear()">Clear</button> 
 
 
      </div>
